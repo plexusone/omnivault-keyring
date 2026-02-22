@@ -1,9 +1,9 @@
 module github.com/agentplexus/omnivault-keyring
 
-go 1.24.0
+go 1.25.5
 
 require (
-	github.com/agentplexus/omnivault v0.2.0
+	github.com/agentplexus/omnivault v0.2.1
 	github.com/zalando/go-keyring v0.2.6
 )
 
