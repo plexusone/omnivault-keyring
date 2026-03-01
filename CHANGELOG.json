@@ -1,0 +1,60 @@
+{
+  "irVersion": "1.0",
+  "project": "omnivault-keyring",
+  "repository": "https://github.com/plexusone/omnivault-keyring",
+  "versioning": "semver",
+  "commitConvention": "conventional",
+  "releases": [
+    {
+      "version": "v0.2.0",
+      "date": "2026-03-01",
+      "highlights": [
+        { "description": "Module path migrated from agentplexus to plexusone organization" }
+      ],
+      "breaking": [
+        { "description": "Module path changed from `github.com/agentplexus/omnivault-keyring` to `github.com/plexusone/omnivault-keyring`", "commit": "12bfcda" }
+      ],
+      "changed": [
+        { "description": "Update omnivault dependency to `github.com/plexusone/omnivault` v0.3.0", "commit": "12bfcda" },
+        { "description": "Update all internal imports to use new module path", "commit": "12bfcda" },
+        { "description": "Update documentation URLs to plexusone organization", "commit": "99a2c83" },
+        { "description": "Migrate to standard plexusone reusable workflows", "commit": "a8d73f0" }
+      ],
+      "documentation": [
+        { "description": "Add emoji icons to README Features section", "commit": "811c184" }
+      ]
+    },
+    {
+      "version": "v0.1.1",
+      "date": "2026-02-22",
+      "highlights": [
+        { "description": "Dependency updates and CI improvements" }
+      ],
+      "changed": [
+        { "description": "Update CI workflow Go versions", "commit": "0b1e87f" },
+        { "description": "Bump `github.com/agentplexus/omnivault` from 0.2.0 to 0.2.1", "commit": "6203c80" }
+      ],
+      "dependencies": [
+        { "description": "Update go.mod dependencies", "commit": "d88732c" },
+        { "description": "Update go.mod dependencies", "commit": "decf04d" }
+      ]
+    },
+    {
+      "version": "v0.1.0",
+      "date": "2025-12-27",
+      "highlights": [
+        { "description": "Cross-platform OS credential store provider for OmniVault" },
+        { "description": "Native integration with macOS Keychain, Windows Credential Manager, and Linux Secret Service" }
+      ],
+      "added": [
+        { "description": "Cross-platform keyring provider implementing `vault.Vault` interface", "commit": "b2b2350" },
+        { "description": "Support for macOS Keychain, Windows Credential Manager, and Linux Secret Service (GNOME Keyring/KWallet)", "commit": "b2b2350" },
+        { "description": "Multi-field secrets support with JSON format option", "commit": "b2b2350" },
+        { "description": "Internal index for List() functionality (OS keyrings don't support enumeration)", "commit": "b2b2350" },
+        { "description": "Configurable service name for secret namespacing", "commit": "b2b2350" },
+        { "description": "URI resolution support via `keyring://` scheme", "commit": "b2b2350" },
+        { "description": "OnIndexError callback for handling non-fatal index operation errors", "commit": "b2b2350" }
+      ]
+    }
+  ]
+}
