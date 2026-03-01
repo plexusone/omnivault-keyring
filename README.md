@@ -6,7 +6,7 @@
 [![Docs][docs-godoc-svg]][docs-godoc-url]
 [![License][license-svg]][license-url]
 
-Cross-platform OS credential store provider for [OmniVault](https://github.com/agentplexus/omnivault). Store and retrieve secrets securely using your operating system's native credential manager.
+Cross-platform OS credential store provider for [OmniVault](https://github.com/plexusone/omnivault). Store and retrieve secrets securely using your operating system's native credential manager.
 
 ## Features
 
@@ -29,7 +29,7 @@ Cross-platform OS credential store provider for [OmniVault](https://github.com/a
 ## Installation
 
 ```bash
-go get github.com/agentplexus/omnivault-keyring
+go get github.com/plexusone/omnivault-keyring
 ```
 
 ### Linux Prerequisites
@@ -61,8 +61,8 @@ import (
     "fmt"
     "log"
 
-    "github.com/agentplexus/omnivault-keyring"
-    "github.com/agentplexus/omnivault/vault"
+    "github.com/plexusone/omnivault-keyring"
+    "github.com/plexusone/omnivault/vault"
 )
 
 func main() {
@@ -97,8 +97,8 @@ func main() {
 
 ```go
 import (
-    "github.com/agentplexus/omnivault-keyring"
-    "github.com/agentplexus/omnivault/vault"
+    "github.com/plexusone/omnivault-keyring"
+    "github.com/plexusone/omnivault/vault"
 )
 
 // Create provider with service name
@@ -206,8 +206,8 @@ Use keyring as a backend for the OmniVault client:
 
 ```go
 import (
-    "github.com/agentplexus/omnivault"
-    "github.com/agentplexus/omnivault-keyring"
+    "github.com/plexusone/omnivault"
+    "github.com/plexusone/omnivault-keyring"
 )
 
 // Create keyring provider
@@ -239,10 +239,10 @@ Combine keyring with other providers using OmniVault's resolver:
 
 ```go
 import (
-    "github.com/agentplexus/omnivault"
-    "github.com/agentplexus/omnivault-keyring"
-    "github.com/agentplexus/omnivault/providers/env"
-    "github.com/agentplexus/omnivault/providers/file"
+    "github.com/plexusone/omnivault"
+    "github.com/plexusone/omnivault-keyring"
+    "github.com/plexusone/omnivault/providers/env"
+    "github.com/plexusone/omnivault/providers/file"
 )
 
 // Create resolver
@@ -309,9 +309,9 @@ import (
     "context"
     "os"
 
-    "github.com/agentplexus/omnivault"
-    "github.com/agentplexus/omnivault-keyring"
-    "github.com/agentplexus/omnivault/providers/env"
+    "github.com/plexusone/omnivault"
+    "github.com/plexusone/omnivault-keyring"
+    "github.com/plexusone/omnivault/providers/env"
 )
 
 type Config struct {
@@ -515,7 +515,7 @@ dbus-run-session -- your-app
 ```go
 import (
     "errors"
-    "github.com/agentplexus/omnivault/vault"
+    "github.com/plexusone/omnivault/vault"
 )
 
 secret, err := kr.Get(ctx, "my-secret")
@@ -595,19 +595,19 @@ MIT License - see [LICENSE](LICENSE) for details.
 
 ## Related Projects
 
-- [OmniVault](https://github.com/agentplexus/omnivault) - Core library
+- [OmniVault](https://github.com/plexusone/omnivault) - Core library
 - [zalando/go-keyring](https://github.com/zalando/go-keyring) - Underlying keyring library
 - [99designs/keyring](https://github.com/99designs/keyring) - Alternative keyring library
 
- [build-status-svg]: https://github.com/agentplexus/omnivault-keyring/actions/workflows/ci.yaml/badge.svg?branch=main
- [build-status-url]: https://github.com/agentplexus/omnivault-keyring/actions/workflows/ci.yaml
- [lint-status-svg]: https://github.com/agentplexus/omnivault-keyring/actions/workflows/lint.yaml/badge.svg?branch=main
- [lint-status-url]: https://github.com/agentplexus/omnivault-keyring/actions/workflows/lint.yaml
- [goreport-svg]: https://goreportcard.com/badge/github.com/agentplexus/omnivault-keyring
- [goreport-url]: https://goreportcard.com/report/github.com/agentplexus/omnivault-keyring
- [docs-godoc-svg]: https://pkg.go.dev/badge/github.com/agentplexus/omnivault-keyring
- [docs-godoc-url]: https://pkg.go.dev/github.com/agentplexus/omnivault-keyring
+ [build-status-svg]: https://github.com/plexusone/omnivault-keyring/actions/workflows/ci.yaml/badge.svg?branch=main
+ [build-status-url]: https://github.com/plexusone/omnivault-keyring/actions/workflows/ci.yaml
+ [lint-status-svg]: https://github.com/plexusone/omnivault-keyring/actions/workflows/lint.yaml/badge.svg?branch=main
+ [lint-status-url]: https://github.com/plexusone/omnivault-keyring/actions/workflows/lint.yaml
+ [goreport-svg]: https://goreportcard.com/badge/github.com/plexusone/omnivault-keyring
+ [goreport-url]: https://goreportcard.com/report/github.com/plexusone/omnivault-keyring
+ [docs-godoc-svg]: https://pkg.go.dev/badge/github.com/plexusone/omnivault-keyring
+ [docs-godoc-url]: https://pkg.go.dev/github.com/plexusone/omnivault-keyring
  [license-svg]: https://img.shields.io/badge/license-MIT-blue.svg
- [license-url]: https://github.com/agentplexus/omnivault-keyring/blob/master/LICENSE
- [used-by-svg]: https://sourcegraph.com/github.com/agentplexus/omnivault-keyring/-/badge.svg
- [used-by-url]: https://sourcegraph.com/github.com/agentplexus/omnivault-keyring?badge
+ [license-url]: https://github.com/plexusone/omnivault-keyring/blob/master/LICENSE
+ [used-by-svg]: https://sourcegraph.com/github.com/plexusone/omnivault-keyring/-/badge.svg
+ [used-by-url]: https://sourcegraph.com/github.com/plexusone/omnivault-keyring?badge

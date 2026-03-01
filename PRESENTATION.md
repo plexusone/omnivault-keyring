@@ -1,6 +1,6 @@
 ---
 marp: true
-theme: agentplexus
+theme: plexusone
 paginate: true
 ---
 
@@ -50,8 +50,8 @@ Secure secrets using native OS keyrings
 
 ```go
 import (
-    "github.com/agentplexus/omnivault-keyring"
-    "github.com/agentplexus/omnivault/vault"
+    "github.com/plexusone/omnivault-keyring"
+    "github.com/plexusone/omnivault/vault"
 )
 
 // Create a keyring provider
@@ -99,7 +99,7 @@ fmt.Printf("Host: %s, User: %s", secret.Fields["host"], secret.Fields["username"
 Use as a custom vault backend:
 
 ```go
-import "github.com/agentplexus/omnivault"
+import "github.com/plexusone/omnivault"
 
 client, _ := omnivault.NewClient(omnivault.Config{
     CustomVault: keyring.New(keyring.Config{
@@ -255,12 +255,12 @@ if err != nil {
 # Get Started
 
 ```bash
-go get github.com/agentplexus/omnivault-keyring
+go get github.com/plexusone/omnivault-keyring
 ```
 
 **Documentation**
-github.com/agentplexus/omnivault-keyring
+github.com/plexusone/omnivault-keyring
 
 **Related Projects**
-- [OmniVault](https://github.com/agentplexus/omnivault) — Core library
+- [OmniVault](https://github.com/plexusone/omnivault) — Core library
 - [zalando/go-keyring](https://github.com/zalando/go-keyring) — Underlying keyring library
