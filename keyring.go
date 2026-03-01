@@ -34,7 +34,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/agentplexus/omnivault/vault"
+	"github.com/plexusone/omnivault/vault"
 	zkeyring "github.com/zalando/go-keyring"
 )
 

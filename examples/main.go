@@ -6,10 +6,10 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/agentplexus/omnivault"
-	"github.com/agentplexus/omnivault/vault"
+	"github.com/plexusone/omnivault"
+	"github.com/plexusone/omnivault/vault"
 
-	keyring "github.com/agentplexus/omnivault-keyring"
+	keyring "github.com/plexusone/omnivault-keyring"
 )
 
 func main() {
