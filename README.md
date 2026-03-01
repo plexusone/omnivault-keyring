@@ -10,13 +10,13 @@ Cross-platform OS credential store provider for [OmniVault](https://github.com/p
 
 ## Features
 
-- **Cross-Platform**: Works on macOS, Windows, and Linux
-- **Native Security**: Uses OS-provided secure storage (not custom encryption)
-- **Multi-Field Secrets**: Store complex credentials with multiple fields (username, password, host, etc.)
-- **OmniVault Compatible**: Implements the `vault.Vault` interface for seamless integration
-- **URI Resolution**: Use `keyring://` URIs with OmniVault's resolver
-- **Listing Support**: Enumerate stored secrets (via internal index)
-- **Zero Configuration**: Works out of the box with sensible defaults
+- 🌐 **Cross-Platform**: Works on macOS, Windows, and Linux
+- 🔐 **Native Security**: Uses OS-provided secure storage (not custom encryption)
+- 📦 **Multi-Field Secrets**: Store complex credentials with multiple fields (username, password, host, etc.)
+- 🔌 **OmniVault Compatible**: Implements the `vault.Vault` interface for seamless integration
+- 🔗 **URI Resolution**: Use `keyring://` URIs with OmniVault's resolver
+- 📋 **Listing Support**: Enumerate stored secrets (via internal index)
+- ⚡ **Zero Configuration**: Works out of the box with sensible defaults
 
 ## Supported Platforms
 
